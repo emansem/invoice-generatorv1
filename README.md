@@ -1,50 +1,42 @@
-# React + TypeScript + Vite
+# Invoice Generator Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple invoice generator built with **React.js**. It allows users to create and download invoices as PDF files. The application leverages **local storage** to store invoice data for easy management. This project was created for **practice purposes** as part of my journey to learn **React.js**.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Invoice Generation**: Create invoices by adding customer details, itemized products/services, and total amounts.
+- **Download as PDF**: Users can download their generated invoices as PDF files quickly.
+- **Local Storage**: Invoice data is stored in local storage, enabling users to view and manage invoices even after page reloads.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React.js**: A JavaScript library for building user interfaces.
+- **Local Storage**: Used to persist invoice data in the browser.
+- **JavaScript and TypeScript**: For handling logic and data manipulation.
+- **HTML/CSS**: For structuring and styling the application.
 
-- Configure the top-level `parserOptions` property like this:
+## Usage
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. Fill out the customer and product/service details in the invoice form.
+2. Add multiple items to the invoice as needed.
+3. Generate the invoice by clicking the "Generate PDF" button.
+4. Download the invoice as a PDF file.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Purpose
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+This project was built as part of my learning process with **React.js**. I aimed to gain hands-on experience with managing state, handling local storage, and providing a fast and responsive user interface. The invoice generator project helped me improve my understanding of **React components**, **state management**, and **file handling**.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Future Improvements
+
+- Add authentication for user accounts.
+- Allow users to edit and delete invoices.
+- Improve UI/UX design with more customization options.
+- Add additional export options (e.g., Excel, CSV).
+
+## Fork This Project
+
+Feel free to **fork this project** if you would like to build upon it or use it for your own learning purposes.
+
+## License
+
+This project is open-source and free to use for learning purposes.
