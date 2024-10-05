@@ -2,7 +2,7 @@ import React, { createContext, useContext, useEffect, useState } from "react";
 import { invoiceDataContext } from "./InvoiceData";
 
 interface HeaderContextProps {
-  date: string;
+  date: string | any;
   paymentTerms: string;
   dueDate: string;
   poNumber: number;
@@ -24,8 +24,9 @@ export default function HeaderContextApiProvider({
 }: {
   children: React.ReactNode;
 }) {
-  const now = Date.now();
-  const [date, setDate] = useState("2024-10-03");
+  const [date, setDate] = useState<string | number | unknown | any>(
+    "2024-10-03"
+  );
   const [paymentTerms, setPaymentTerms] = useState("");
   const [dueDate, setDueDate] = useState("2024-10-03");
   const [poNumber, setpoNumber] = useState(0);
@@ -97,7 +98,7 @@ export default function HeaderContextApiProvider({
       setAuthor(invoiceData[0].from);
       setBillValue(invoiceData[0].billTo);
       setDueDate(invoiceData[0].dueDate);
-      setDate(invoiceData[0].date);
+      setDate(invoiceData[0]?.date);
       setPaymentTerms(invoiceData[0].paymentTerms);
       setpoNumber(invoiceData[0].poNumber);
       setShipToValue(invoiceData[0].shipTo);

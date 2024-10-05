@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { InputV3, InputV4 } from "../Inputs/Input";
 import { OpenButtonsContext } from "../../contextApi/OpenButtons";
 import { InvoiceFooterRightContext } from "../../contextApi/InvoiceFooterRightContext";

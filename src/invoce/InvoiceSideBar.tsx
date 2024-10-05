@@ -1,7 +1,7 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { FaArrowDown } from "react-icons/fa6";
 import { CurrencyContextApi } from "../contextApi/CurrencyContextApi";
-import { DownloadContext } from "../downloadInvoice/DownloadContext";
+
 import { Link } from "react-router-dom";
 
 const currencyData = [

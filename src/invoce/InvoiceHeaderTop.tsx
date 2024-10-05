@@ -69,7 +69,7 @@ function InvoiceNumber() {
     <div className="flex items-end text-right gap-2 flex-col">
       <label
         htmlFor="invoice-number"
-        className="text-4xl capitalize text-stone-300 bg-transparent py-4 w-[80%] px-4 text-right font-bold"
+        className="text-4xl capitalize text-stone-300 bg-transparent py-4 w-full  lg:w-[80%] text-left px-4 lg:text-right font-bold"
       >
         Invoice
       </label>
@@ -86,7 +86,7 @@ function InvoiceNumber() {
 
 export default function InvoiceHeaderTop() {
   return (
-    <div className="flex justify-between">
+    <div className="flex flex-col items-start gap-2  md:flex-row md:justify-between">
       <UploadLogo />
       <InvoiceNumber />
     </div>

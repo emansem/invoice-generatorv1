@@ -1,4 +1,4 @@
-import React, { useEffect, useContext, useState } from "react";
+import { useContext } from "react";
 import TableHeader from "./TableHeader";
 import TableRows from "./TableRows";
 import { ContextTableApi } from "../../contextApi/ContextTableApi";

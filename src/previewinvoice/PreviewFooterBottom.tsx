@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { invoiceDataContext } from "../contextApi/InvoiceData";
 
 export default function PreviewFooterBottom() {

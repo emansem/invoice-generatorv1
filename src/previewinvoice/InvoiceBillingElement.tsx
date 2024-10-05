@@ -1,4 +1,3 @@
-import React from "react";
 interface invoceDataHeaderProps {
   label: string;
   value: string | number | any;

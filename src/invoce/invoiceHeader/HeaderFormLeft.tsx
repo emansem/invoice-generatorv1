@@ -1,6 +1,6 @@
-import React, { useContext } from "react";
-import { useState } from "react";
-import InputV1, { InputV2, SingleInput } from "../Inputs/Input";
+import { useContext } from "react";
+
+import InputV1, { SingleInput } from "../Inputs/Input";
 import { HeaderContextApi } from "../../contextApi/HeaderContextApi";
 function InputLeft() {
   const context = useContext(HeaderContextApi);

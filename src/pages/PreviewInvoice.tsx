@@ -1,4 +1,3 @@
-import React from "react";
 import PreviewInvoiceHeader from "../previewinvoice/PreviewInvoiceHeader/PreviewInvoiceHeader";
 import PreviewBody from "../previewinvoice/PreviewBody";
 

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import { useContext } from "react";
 import { InputV2 } from "../Inputs/Input";
 import { HeaderContextApi } from "../../contextApi/HeaderContextApi";
 
@@ -17,7 +17,7 @@ export default function HeaderFormRight() {
     poNumber,
     handleOnchangePoNumber
   } = context;
-  const dateNow = new Date(date);
+
   return (
     <div>
       <InputV2
